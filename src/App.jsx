@@ -26,7 +26,7 @@ function App() {
       </div>
 
       <div className="d-flex gap-2 justify-content-center">
-        <button className="btn btn-primary">MAIUSCOLO</button>
+        <button className="btn btn-primary" onClick={toUpperCase}>MAIUSCOLO</button>
         <button className="btn btn-secondary">minuscolo</button>
         <button className="btn btn-success">Iniziali Maiuscole</button>
         <button className="btn btn-warning">Inverti parole</button>
