@@ -15,7 +15,7 @@ function App() {
     const result = text
     .toLowerCase()
     .split(" ")
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(word => word[0].toUpperCase() + word.slice(1))
     .join(" ")
     setText(result)
 }
