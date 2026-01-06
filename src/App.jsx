@@ -1,3 +1,11 @@
+import { useState } from 'react'
+const [text,setText] = useState("")
+
+const toUpperCase = () => {
+  setText(text.toLocaleUpperCase())
+}
+
+
 function App() {
 
   return (
@@ -12,6 +20,8 @@ function App() {
             className="form-control"
             rows="4"
             placeholder="Scrivi il tuo testo..."
+            value={text}
+            onChange={(e) => setText(e.text.value)}
           ></textarea>
         </div>
       </div>
