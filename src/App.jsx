@@ -1,12 +1,11 @@
 import { useState } from 'react'
-const [text,setText] = useState("")
-
-const toUpperCase = () => {
-  setText(text.toLocaleUpperCase())
-}
-
 
 function App() {
+  const [text, setText] = useState("")
+
+  const toUpperCase = () => {
+    setText(text.toLocaleUpperCase())
+  }
 
   return (
     <div className="container mt-5">
@@ -21,7 +20,7 @@ function App() {
             rows="4"
             placeholder="Scrivi il tuo testo..."
             value={text}
-            onChange={(e) => setText(e.text.value)}
+            onChange={(e) => setText(e.target.value)}
           ></textarea>
         </div>
       </div>
