@@ -6,11 +6,15 @@ function App() {
         Convertitore di Testo
       </h1>
 
-      <textarea
-        className="form-controll mb-3"
-        rows="4"
-        placeholder="Scrivi il tuo testo..."
-      ></textarea>
+      <div className="row justify-content-center mb-3">
+        <div className="col-md-8">
+          <textarea
+            className="form-control"
+            rows="4"
+            placeholder="Scrivi il tuo testo..."
+          ></textarea>
+        </div>
+      </div>
 
       <div className="d-flex gap-2 justify-content-center">
         <button className="btn btn-primary">MAIUSCOLO</button>
