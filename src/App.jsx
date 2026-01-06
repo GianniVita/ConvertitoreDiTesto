@@ -7,6 +7,10 @@ function App() {
     setText(text.toLocaleUpperCase())
   }
 
+  const toLowerCase = () => {
+    setText(text.toLowerCase())
+  }
+
   return (
     <div className="container mt-5">
       <h1 className="text-center mb-4">
@@ -27,7 +31,7 @@ function App() {
 
       <div className="d-flex gap-2 justify-content-center">
         <button className="btn btn-primary" onClick={toUpperCase}>MAIUSCOLO</button>
-        <button className="btn btn-secondary">minuscolo</button>
+        <button className="btn btn-secondary" onClick={toLowerCase}>minuscolo</button>
         <button className="btn btn-success">Iniziali Maiuscole</button>
         <button className="btn btn-warning">Inverti parole</button>
       </div>
