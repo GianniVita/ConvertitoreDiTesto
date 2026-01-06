@@ -20,6 +20,10 @@ function App() {
     setText(result)
 }
 
+  const reverseWords = () => {
+    const result = text.split(" ").reverse().join(" ")
+    setText(result)
+  }
 
   return (
     <div className="container mt-5">
@@ -43,7 +47,7 @@ function App() {
         <button className="btn btn-primary" onClick={toUpperCase}>MAIUSCOLO</button>
         <button className="btn btn-secondary" onClick={toLowerCase}>minuscolo</button>
         <button className="btn btn-success" onClick={capitalizeWord}>Iniziali Maiuscole</button>
-        <button className="btn btn-warning">Inverti parole</button>
+        <button className="btn btn-warning" onClick={reverseWords}>Inverti parole</button>
       </div>
     </div>
 
